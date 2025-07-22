@@ -1,0 +1,15 @@
+{
+  "name": "catastic-memes-server",
+  "version": "1.0.0",
+  "description": "Node Express server for catastic memes client",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Jesse Ma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
