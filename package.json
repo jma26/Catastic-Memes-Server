@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Node Express server for catastic memes client",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
@@ -11,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.0"
   }
 }
