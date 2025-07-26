@@ -20,6 +20,10 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Server is running smoothly!' });
 });
 
+app.get('/ip', (req, res) => {
+	res.send(req.ip);
+});
+
 app.use('/api', limiter, catRoutes);
 
 app.listen(port, () => {
