@@ -14,14 +14,10 @@ const limiter = rateLimit({
 });
 
 // Enable trust proxy
-app.set('trust proxy', true);
+app.set('trust proxy', 1);
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Server is running smoothly!' });
-});
-
-app.get('/ip', (req, res) => {
-	res.send(req.ip);
 });
 
 app.use('/api', limiter, catRoutes);
